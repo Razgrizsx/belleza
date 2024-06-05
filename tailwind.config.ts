@@ -36,7 +36,9 @@ const config: Config = {
       textColor: {
         purple: "#542c6c",
         ocre: "#cda860",
-        pink: "#c7298e"
+        pink: "#c7298e",
+        pink2: "#cc4eae",
+        ultraPink: "#f53687"
       }
     }
   },
