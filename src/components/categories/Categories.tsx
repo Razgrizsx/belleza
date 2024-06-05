@@ -1,11 +1,13 @@
 import Link from "next/link";
 
-export const Categories = () => {
-  const products = ["Perfumes", "Ropa", "Maquillaje", "etc"];
+interface Prop {
+  names: string[];
+}
 
+export const Categories = ({ names }: Prop) => {
   return (
     <div className='flex flex-col w-1/6'>
-      {products.map((elem: string) => (
+      {names.map((elem: string) => (
         <Link href={"/"}>{elem}</Link>
       ))}
     </div>

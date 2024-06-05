@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { FaAngleLeft } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
+
 import "./Carousel.css";
 
 interface Props {
@@ -48,11 +51,17 @@ export const Carousel = ({
             </div>
           ))}
         </div>
-        <button onClick={goToPrevious} className='carousel-control prev'>
-          Previous
+        <button
+          onClick={goToPrevious}
+          className='carousel-control prev flex items-center justify-center'
+        >
+          <FaAngleLeft className='h-12 w-12 opacity-50' />
         </button>
-        <button onClick={goToNext} className='carousel-control next'>
-          Next
+        <button
+          onClick={goToNext}
+          className='carousel-control next flex items-center justify-center'
+        >
+          <FaAngleRight className='h-12 w-12 opacity-50' />
         </button>
       </div>
     </div>
