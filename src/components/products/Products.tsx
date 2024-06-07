@@ -16,7 +16,7 @@ export const Products = ({ products }: Props) => {
             <div className='absolute  flex items-center justify-center top-[calc(50%-50px)] left-[calc(50%-50px)] bg-white rounded-full ease-in-out w-[0px] h-[0px] group-hover:scale-100 group-hover:w-[100px] group-hover:h-[100px] transform transition-all duration-300 hover:bg-pink z-50'>
               <FaSearch className='w-12 h-12 fill-[#cda860] hover:fill-white' />
             </div>
-            <img className='w-full' src={elem.image} alt='padre' />
+            <img className='w-full p-1' src={elem.image} alt='padre' />
           </div>
           <Link
             className=' group-hover:text-pink flex item-center justify-center pt-2 font-poppins font-medium text-base text-purple'

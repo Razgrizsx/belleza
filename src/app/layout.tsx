@@ -4,6 +4,7 @@ import "./globals.css";
 import { TopBar } from "@/components/topbar/TopBar";
 import Carousel from "@/components/carrousel/Carousel";
 import { NavBar } from "@/components/navBar/Navbar";
+import { Footer } from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,8 +37,8 @@ export default function RootLayout({
         <Carousel images={images} />
         <NavBar />
         {children}
+        <Footer />
       </body>
-      <footer className='h-80 w-full bg-purple p-3'>Footer</footer>
     </html>
   );
 }
