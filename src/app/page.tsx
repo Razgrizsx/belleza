@@ -1,6 +1,6 @@
 import { Categories } from "@/components/categories/Categories";
 import { Products } from "@/components/products/Products";
-import { products } from "@/products";
+import { products } from "@/../data/products";
 
 export default function Home() {
   const productNames: string[] = [];

@@ -1,7 +1,7 @@
 import { Product } from "@/types/products";
 import Link from "next/link";
 import { FaSearch } from "react-icons/fa";
-import { products } from "@/products";
+import { products } from "@/../data/products";
 import { Categories } from "@/components/categories/Categories";
 import { Products } from "@/components/products/Products";
 

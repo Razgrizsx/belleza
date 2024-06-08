@@ -10,7 +10,8 @@ export const Products = ({ products }: Props) => {
   return (
     <div className='grid grid-cols-4 gap-2 w-5/6 rounded-md p-4'>
       {products.map((elem: Product) => (
-        <div
+        <Link
+          href={`/${elem.url}`}
           key={elem.name}
           className='z-50 p-2 group cursor-pointer rounded-md'
         >
@@ -21,13 +22,10 @@ export const Products = ({ products }: Props) => {
             </div>
             <img className='w-full p-1' src={elem.image} alt='padre' />
           </div>
-          <Link
-            className=' group-hover:text-pink flex item-center justify-center pt-2 font-poppins font-medium text-base text-purple'
-            href={"/"}
-          >
+          <div className=' group-hover:text-pink flex item-center justify-center pt-2 font-poppins font-medium text-base text-purple'>
             {elem.name}
-          </Link>
-        </div>
+          </div>
+        </Link>
       ))}
     </div>
   );
