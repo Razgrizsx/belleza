@@ -77,6 +77,15 @@ export const Carousel = ({
                 </div>
               </div>
               <img src={image} alt={`Slide ${index}`} />
+              <div className='absolute flex flex-col gap-[1px] right-[15%] w-[230px] h-[100px] top-[25%] text-[30px] font-bold text-white leading-[38px]'>
+                <p>Nuevos</p>
+                <p className='text-[#ffc4dc] text-[36px] h-1/2 w-[300px]'>
+                  Labiales Mate
+                </p>
+                <button className='text-[14px] mt-2 w-[150px] hover:bg-white hover:text-purple font-normal border border-white'>
+                  VER PRODUCTOS
+                </button>
+              </div>
             </div>
           ))}
         </div>
