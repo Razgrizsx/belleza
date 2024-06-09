@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaTruck } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 
@@ -13,10 +14,15 @@ export const TopBar = () => {
         <p className='text-white text-[18px]'>LUNES A VIERNES DE 9 A 17HS</p>
       </div>
       <div className='mr-32 p-8 h-full flex flex-row items-center bg-white gap-3'>
-        <button className='w-12 text-ocre hover:underline'>Log in</button>
-        <button className='text-purple flex flex-row items-center gap-1 hover:underline'>
+        <Link href={"/login"} className='w-12 text-ocre hover:underline'>
+          Log in
+        </Link>
+        <Link
+          href={"/register"}
+          className='text-purple flex flex-row items-center gap-1 hover:underline'
+        >
           Registrarse <FaEnvelope />
-        </button>
+        </Link>
       </div>
     </div>
   );
