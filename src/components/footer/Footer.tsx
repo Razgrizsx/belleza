@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
           <div className='flex flex-row items-center justify-center'>
             <FaEnvelope className='fill-[#cda860] w-3 h-3' />
-            <p className='pl-2'>casayulisrl@gmail.com</p>
+            <p className='pl-2'>pyfperfumes@hotmail.com</p>
           </div>
         </div>
       </div>
@@ -53,7 +53,7 @@ export const Footer = () => {
           </div>
           <div className='flex flex-row items-center justify-center'>
             <FaInstagram className='fill-[#cda860] w-3 h-3' />
-            <p className='pl-2'>@casayuli</p>
+            <p className='pl-2'>@pyf.belleza</p>
           </div>
         </div>
       </div>
@@ -71,14 +71,14 @@ export const Footer = () => {
           >
             <p>Productos</p>
           </Link>
-          <Link
+          {/* <Link
             href={"/nosotros"}
             className={`flex flex-row items-center justify-center cursor-pointer ${
               path === "/nosotros" ? "text-pink" : ""
             } hover:text-pink`}
           >
             <p>Nosotros</p>
-          </Link>
+          </Link> */}
           <Link
             href={"/ofertas"}
             className={`flex flex-row items-center justify-center cursor-pointer ${

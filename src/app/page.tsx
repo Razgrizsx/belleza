@@ -7,7 +7,7 @@ export default function Home() {
   products.map((elem) => productNames.push(elem.name));
 
   return (
-    <main className='flex min-h-screen flex-col'>
+    <main className='flex min-h-screen flex-col bg-[#EBDEF0]'>
       <div className='flex flex-row'>
         <Categories names={productNames} />
         <Products products={products} />

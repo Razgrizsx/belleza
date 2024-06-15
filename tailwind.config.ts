@@ -16,7 +16,8 @@ const config: Config = {
       backgroundColor: {
         purple: "#542c6c",
         ocre: "#cda860",
-        pink: "#c7298e"
+        pink: "#c7298e",
+        dorado: "#D7DBDD"
       },
       fontFamily: {
         alegreya: ["Alegreya", "serif"],
@@ -38,7 +39,8 @@ const config: Config = {
         ocre: "#cda860",
         pink: "#c7298e",
         pink2: "#cc4eae",
-        ultraPink: "#f53687"
+        ultraPink: "#f53687",
+        dorado: "#D7DBDD"
       }
     }
   },
