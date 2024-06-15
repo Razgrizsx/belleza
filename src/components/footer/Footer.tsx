@@ -58,7 +58,7 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className='w-3/6 flex flex-col justify-start items-center'>
+      {/* <div className='w-3/6 flex flex-col justify-start items-center'>
         <div className='w-1/2 flex flex-col justify-start items-start gap-3'>
           <div className='flex w-fit justify-start mb-3 text-[22px] font-semibold text-ocre '>
             Contactanos
@@ -71,14 +71,14 @@ export const Footer = () => {
           >
             <p>Productos</p>
           </Link>
-          {/* <Link
+           <Link
             href={"/nosotros"}
             className={`flex flex-row items-center justify-center cursor-pointer ${
               path === "/nosotros" ? "text-pink" : ""
             } hover:text-pink`}
           >
             <p>Nosotros</p>
-          </Link> */}
+          </Link> 
           <Link
             href={"/ofertas"}
             className={`flex flex-row items-center justify-center cursor-pointer ${
@@ -96,7 +96,7 @@ export const Footer = () => {
             <p>Contacto</p>
           </Link>
         </div>
-      </div>
+      </div> */}
     </footer>
   );
 };
