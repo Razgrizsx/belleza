@@ -3,12 +3,13 @@ import { NextResponse } from "next/server";
 
 export async function POST(request: NextResponse) {
   try {
-    const { name, url, image } = await request.json();
+    const { name, price, image, category } = await request.json();
     const newProduct = await prismadb.products.create({
       data: {
         name,
-        url,
-        image
+        price,
+        image,
+        category
       }
     });
     return NextResponse.json(newProduct);

@@ -55,7 +55,7 @@ export const Carousel = ({
               <div className='absolute flex flex-col gap-[1px] left-[15%] w-[230px] h-[200px] top-[10%]'>
                 <div className='bg-white text-purple w-full pb-2 h-[55%] rounded-t-md flex flex-col items-center justify-center'>
                   <div className='text-[38px] flex flex-row'>
-                    casa <p className='font-semibold pl-3'>yuli</p>
+                    PYF <p className='font-semibold pl-3'>Belleza</p>
                   </div>
                   <p className='text-center text-sm leading-[15px]'>
                     distribuidora mayorista de cosméticos y perfumería
