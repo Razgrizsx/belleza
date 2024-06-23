@@ -17,7 +17,10 @@ export async function GET(
   }
 }
 
-export async function DELETE({ params }: { params: { id: string } }) {
+export async function DELETE(
+  request: NextRequest,
+  { params }: { params: { id: string } }
+) {
   try {
     console.log(params);
     const response = await prismadb.products.delete({
