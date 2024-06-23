@@ -72,7 +72,7 @@ export const Carousel = ({
                   </div>
                   <div className='flex flex-row items-center justify-center'>
                     <FaEnvelope className='fill-[#e38db2] w-3 h-3' />
-                    <p className='pl-2'>casayuli@gmail.com</p>
+                    <p className='pl-2'>pyfperfumes@hotmail.com</p>
                   </div>
                 </div>
               </div>

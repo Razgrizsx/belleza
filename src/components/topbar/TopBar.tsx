@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FaTruck } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import { Cart } from "../cart/Cart";
 
 export const TopBar = () => {
   return (
@@ -13,7 +14,7 @@ export const TopBar = () => {
         <p className='text-pink text-[18px]'>PAIS</p>
         {/* <p className='text-white text-[18px]'>LUNES A VIERNES DE 9 A 17HS</p> */}
       </div>
-      <div className='mr-32 p-8 h-full flex flex-row items-center bg-white gap-3'>
+      <div className='mr-32 p-2 h-full flex flex-row items-center bg-white gap-3'>
         <Link href={"/login"} className='w-12 text-ocre hover:underline'>
           Log in
         </Link>
@@ -23,6 +24,7 @@ export const TopBar = () => {
         >
           Registrarse <FaEnvelope />
         </Link>
+        <Cart />
       </div>
     </div>
   );
