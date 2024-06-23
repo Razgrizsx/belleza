@@ -1,7 +1,7 @@
 import prismadb from "@/lib/prismadb";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function POST(request: NextResponse) {
+export async function POST(request: NextRequest) {
   try {
     const { name, price, image, category } = await request.json();
     const newProduct = await prismadb.products.create({
