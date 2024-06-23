@@ -27,7 +27,7 @@ export const products: Product[] = [
   },
   {
     name: "Tinturas",
-    url: "tintural",
+    url: "tinturas",
     image:
       "https://casayuli.com.ar/thumb.php?src=/uploads/filemanager/kit-tintura-500x500.png&w=240&h=210&zc=2"
   },
@@ -63,7 +63,7 @@ export const products: Product[] = [
   },
   {
     name: "Perfumes para Caballero",
-    url: "perfumescabballero",
+    url: "perfumescaballero",
     image:
       "https://casayuli.com.ar/thumb.php?src=/uploads/filemanager/hombre.jpg&w=240&h=210&zc=2"
   },
@@ -98,45 +98,9 @@ export const products: Product[] = [
       "https://casayuli.com.ar/thumb.php?src=/uploads/filemanager/Zapping_05-05.jpg&w=240&h=210&zc=2"
   },
   {
-    name: "Repelente de insectos",
-    url: "repelente",
-    image:
-      "https://casayuli.com.ar/thumb.php?src=/uploads/filemanager/Imagenes%20Algabo-17_L.png&w=240&h=210&zc=2"
-  },
-  {
     name: "Alcohol en Gel",
     url: "alcohol",
     image:
       "https://casayuli.com.ar/thumb.php?src=/uploads/filemanager/alg.jpg&w=240&h=210&zc=2"
   }
 ];
-
-export const selectedProducts = (type: string): Product[] => {
-  switch (type) {
-    case "cosmeticos":
-      return [
-        {
-          name: "Protector labial con Filtro Solar Dots",
-          image:
-            "https://casayuli.com.ar/thumb.php?src=uploads/productos/1691511160-95117.png&w=240&h=210&zc=2",
-          price: 2288
-        },
-        {
-          name: "",
-          image: "",
-          price: 0
-        }
-      ];
-      break;
-
-    default:
-      return [
-        {
-          name: "",
-          image: "",
-          price: 0
-        }
-      ];
-      break;
-  }
-};

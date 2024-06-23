@@ -8,6 +8,7 @@ import { Footer } from "@/components/footer/Footer";
 import { Provider } from "react-redux";
 import { store } from "@/redux/store";
 import { StoreProvider } from "@/components/storeProvider/StoreProvider";
+import LoadProducts from "@/redux/loadProducts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({
         </head>
         <body className='bg-[#EBDEF0]'>
           <TopBar />
+          <LoadProducts />
           <Carousel images={images} />
           <NavBar />
           {children}
