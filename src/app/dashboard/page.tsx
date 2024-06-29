@@ -102,7 +102,7 @@ export default function Test() {
           API Call
         </button>
         <div className='grid grid-cols-9'>
-          {products?.map((elem: any) => {
+          {products?.slice().map((elem: any) => {
             return (
               <div key={elem.name} className='z-50 p-2 rounded-md'>
                 <div className='relative bg-white rounded-md'>
