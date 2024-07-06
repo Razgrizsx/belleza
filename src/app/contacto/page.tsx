@@ -40,7 +40,7 @@ export default function Contacto() {
                 <div>
                   <div className='text-start text-[16px]'>EMAIL</div>
                   <div className='text-[24px] text-[#4d4d4d] cursor-pointer pt-2 hover:text-pink'>
-                    casayulisrl@gmail.com
+                    pyfperfumes@hotmail.com
                   </div>
                 </div>
                 <div>

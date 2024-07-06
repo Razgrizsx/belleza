@@ -16,7 +16,7 @@ export default function Producto({ params }: any) {
 
   return (
     <main className='min-h-screen p-6'>
-      <div className='grid grid-cols-6' onClick={() => console.log(product)}>
+      <div className='grid grid-cols-6' onClick={() => console.log()}>
         {product?.map((elem: any) => {
           return (
             <div

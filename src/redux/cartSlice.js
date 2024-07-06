@@ -16,10 +16,21 @@ const cartSlice = createSlice({
         (elem) => elem.id !== action.payload
       );
       state.products = filtered;
-      console.log("payload", filtered);
+    },
+    changeQuantity: (state, action) => {
+      const filtered = state.products.find(
+        (elem) => elem.id === action.payload[0].id
+      );
+      if (action.payload[1] === "plus") {
+        filtered.quantity = filtered.quantity + 1;
+      } else {
+        filtered.quantity = filtered.quantity - 1;
+      }
+
+      console.log(filtered, state.products);
     }
   }
 });
 
 export default cartSlice.reducer;
-export const { addProduct, deleteProduct } = cartSlice.actions;
+export const { addProduct, deleteProduct, changeQuantity } = cartSlice.actions;

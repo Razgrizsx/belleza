@@ -17,15 +17,24 @@ export default function Producto({ params }: any) {
   const cart = useSelector((state: any) => state.cart.products);
 
   const handleAddCart = () => {
-    if (cart.includes(product[0])) return;
-    dispatch(addProduct(product[0]));
+    const addedProduct = {
+      category: product[0].category,
+      id: product[0].id,
+      image: product[0].image,
+      name: product[0].name,
+      price: product[0].price,
+      quantity: 1
+    };
+    const filtered = cart.filter((elem: any) => elem.id === addedProduct.id);
+    if (filtered.length > 0) return;
+    dispatch(addProduct(addedProduct));
   };
 
   return (
     <main className='min-h-screen p-6'>
       <div
         className='flex w-full h-full items-center justify-center'
-        onClick={() => console.log(product, cart)}
+        onClick={() => console.log()}
       >
         {product?.map((elem: any) => {
           return (

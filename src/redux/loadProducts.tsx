@@ -7,7 +7,6 @@ export default function LoadProducts() {
   const dispatch = useTypedDispatch();
 
   useEffect(() => {
-    console.log("entra");
     dispatch(fetchProducts());
   }, []);
 
